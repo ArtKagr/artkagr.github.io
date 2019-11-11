@@ -23,15 +23,15 @@
                         <input class="form__input" type="text" name="name" pattern="[А-ЯЁ]{1,1}[а-яё]{1,19}[-\w]?[А-ЯЁ]{0,1}[а-яё]{0,19}" placeholder="Имя" minlength="2" maxlength="20" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="([0-9a-z]{1}[-0-9a-z\.]{1,}@[a-z]{1,}\.[a-z]{2,4}" placeholder="E-Mail"/>
+                        <input class="form__input" type="email" name="name" pattern="[0-9a-z]{1}[-0-9a-z\.]{1,}@[a-z]{1,}\.[a-z]{2,4}" placeholder="E-Mail"/>
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="(8|\+7)(\s|-\)?[(\w]?9\d\d[)\w]?(\s|-\)?(\d\d\d)(\s|-\)?(\d\d)(\s|-\)?(\d\d)" minlength="11" maxlength="18"/>
+                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="(8|\+7)(\s|\-)?[\(]?9\d\d[\)]?(\s|\-)?\d\d\d(\s|\-)?\d\d(\s|\-)?\d\d" minlength="11" maxlength="18"/>
                         <span class="form__error">телефон в формате: +7 (123) 456-78-90</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="name" pattern="^https?:\/\/(www\.)?stasbasov\.ru(\:[\d]{2,5})?\/#?" placeholder="Ваш сайт" />
+                        <input class="form__input" type="url" name="name" pattern="^https?:\/\/(www\.)?[\w]+\.?[\w]*\.?[\w]*\.?\/[\w]*" placeholder="Ваш сайт" />
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
